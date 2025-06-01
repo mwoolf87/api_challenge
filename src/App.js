@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 function App() {
-  // Client ID: 6559f30c7223439cb3a0d69bf9a8db82 Client Secret: 4ceef2a1dcdb44edab46deb55e5cffcc
   const [searchTerm, setSearchTerm] = useState("");
 
   const clickHandler = async () => {
@@ -11,8 +10,8 @@ function App() {
       );
 
       const data = await res.json();
-      console.log(searchTerm);
-      console.log(data);
+      // console.log(searchTerm);
+      // console.log(data);
     } catch (error) {
       console.log(error);
     }
